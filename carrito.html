@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carrito de Compras</title>
+    <link rel="shortcut icon" href="img/favicon.icon" />
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="/home/estilo.css">
+  </head>
+  <body>
+    <header >
+      <nav>
+        <h1>Carrito</h1>
+        <a href="index.html">Volver a la tienda</a>
+      </nav>
+    </header>
+    <div class="tituloMain">
+      <h2>Detalles del Producto</h2>
+    </div>
+    
+    <main>
+      
+      <div id="producto-detalle">
+        <img src="img\camisa roja.jpg" alt="Camisa roja deportiva" />
+        <h3 id="producto-nombre"></h3>
+        <p id=" producto-precio "></p> <p>$55.000</p>
+        <label for="tallas">Talla:</label>
+        <select id="tallas">
+          <option>S</option>
+          <option>M</option>
+          <option>L</option>
+          <option>XL</option>
+        </select>
+        <label for="colores">Color:</label>
+        <select id="colores">
+          <option>Rojo</option>
+          <!--<option>Negro</option>-->
+          <!-- <option>Azul</option> -->
+          <!--<option>Gris</option>-->
+        </select>
+        <button onclick="finalizarCompra()">Finalizar Compra</button>
+      </div>
+      <div id="producto-detalle">
+        <img src="img\camisa azul.jpg" alt="Camisa azul deportiva" />
+        <h3 id="producto-nombre"></h3>
+        <p id=" producto-precio "></p> <p>$45.000</p>
+        <label for="tallas">Talla:</label>
+        <select id="tallas">
+          <option>S</option>
+          <option>M</option>
+          <option>L</option>
+          <option>XL</option>
+        </select>
+        <label for="colores">Color:</label>
+        <select id="colores">
+          <!--<option>Rojo</option>-->
+          <!--<option>Negro</option>-->
+          <option>Azul</option>
+          <!--<option>Gris</option>-->
+        </select>
+        <button onclick="finalizarCompra()">Finalizar Compra</button>
+      </div>
+
+    </div>
+    <div id="producto-detalle">
+      <img src="img\camisa Negra.jpg" alt="Camisa negra deportiva" />
+      <h3 id="producto-nombre"></h3>
+      <p id=" producto-precio "></p> <p>$50.000</p>
+      <label for="tallas">Talla:</label>
+      <select id="tallas">
+        <option>S</option>
+        <option>M</option>
+        <option>L</option>
+        <option>XL</option>
+      </select>
+      <label for="colores">Color:</label>
+      <select id="colores">
+        <!--<option>Rojo</option>-->
+        <option>Negro</option>
+        <!--<option>Azul</option>-->
+        <!--<option>Gris</option>-->
+      </select>
+      <button onclick="finalizarCompra()">Finalizar Compra</button>
+    </div>
+    </main>
+
+    <script>
+      // Obtener parámetros de la URL
+      const params = new URLSearchParams(window.location.search);
+      document.getElementById("producto-nombre").innerText =
+        params.get("nombre");
+      document.getElementById("producto-precio").innerText =
+        "Precio: " + params.get("precio");
+      document.getElementById("producto-imagen").src = params.get("imagen");
+
+      function finalizarCompra() {
+        alert("¡Compra finalizada!");
+      }
+    </script>
+
+     <!-- Pie de página -->
+     <footer>
+      <div class="footer-top">
+        <h2>
+          ÚNETE A <span class="highlight">MI TIENDA</span> Y OBTÉN <br />
+          200 PUNTOS DE BIENVENIDA
+        </h2>
+        <p>
+          Sé parte de la comunidad que te premia. Acumula puntos y gana
+          beneficios exclusivos.
+        </p>
+        <button class="register-btn"><a href="carrito.html">REGÍSTRATE GRATIS</button>
+      </div>
+
+      <div class="footer-middle">
+        <div class="footer-column">
+          <h3>¿NECESITAS AYUDA?</h3>
+          <ul>
+            <li><a href="#">Políticas de privacidad</a></li>
+            <li><a href="#">T&C - Servicio General</a></li>
+            <li><a href="#">T&C - Promociones</a></li>
+            <li><a href="#">Preguntas Frecuentes</a></li>
+            <li><a href="#">Devoluciones</a></li>
+            <li><a href="#">Contáctanos</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>SOBRE NOSOTROS</h3>
+          <ul>
+            <li><a href="#">¿Quiénes somos?</a></li>
+            <li>
+              <a href="#">¿Qué es <span class="highlight">MI TIENDA</span>?</a>
+            </li>
+            <li>
+              <a href="#">Síguenos en <b>Facebook</b></a>
+            </li>
+            <li>
+              <a href="#">Looks <b>Instagram</b></a>
+            </li>
+            <li>
+              <a href="#">Música en <b>YouTube</b></a>
+            </li>
+            <li><a href="#">Guía de tallas</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>NUESTRAS MARCAS COSTEÑAS</h3>
+          <ul>
+            <li><a href="#">AJA Y QUE LA QUITA Y PON</a></li>
+            <li><a href="#"> ECHE QUE LA DE SIEMPRE</a></li>
+            <li><a href="#">LOGIN NOJODA</a></li>
+            <li><a href="#">MIRA TU ESA VAINA LA UNIQUEÑA</a></li>
+            <li>
+              <a href="#"><b>EDA MAMI QUE VACANA</b></a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>NUESTRAS CATEGORÍAS</h3>
+          <ul>
+            <li><a href="#">Nuevos</a></li>
+            <li><a href="#">Mujer</a></li>
+            <li><a href="#">Hombre</a></li>
+            <li><a href="#">Kids</a></li>
+            <li><a href="#">Bebés</a></li>
+            <li><a href="#">Rebajas</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2025 PAGOS ONLINE</p>
+        <div class="payment-methods">
+          <img src="img/mastercard.png" alt="Mastercard" />
+          <img src="img/visa.png" alt="Visa" />
+          <img src="img/nequi.png" alt="Nequi" />
+          <img src="img/daviplata.png" alt="Daviplata" />
+          <img src="img/addi.png" alt="Addi" />
+          <img src="img/pse.png" alt="pse" />
+          <img src="img/TarjetaMefia.png" alt="el fiao pa dos quincena" />
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

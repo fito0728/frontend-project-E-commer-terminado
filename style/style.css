@@ -1,0 +1,259 @@
+/* styles.css */
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.tituloMain{
+    border-bottom: 2px groove rgb(0, 0, 0);
+    max-width: 90dvw;
+    margin: auto;
+}
+.tituloMain > h2 {
+    text-align: center;
+    color: #000000;
+    filter: drop-shadow(2px 2px 2px rgb(95, 95, 95));
+    font-size: 2rem;
+}
+
+/* Barra de navegación */
+header {
+    background-color: #0e0d0d;
+    color: white;
+    top: 0px;
+    position: sticky;
+    padding: 1.5rem 0;
+    text-align: center;
+    z-index: 2;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Sección de productos */
+main {
+    margin-top: 5rem;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 2rem;
+    justify-content: center;
+    
+}
+
+
+aside {
+    width: 20%;
+    padding: 10px;
+    border-right: 1px solid #ddd;
+}
+.filtro{
+    display: flex;
+    flex-direction: column;
+}
+.productos {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 10px;
+}
+.producto {
+    border: 1px solid #ddd;
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+}
+.producto img {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+button {
+    background-color: #1da13c;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: none;
+    transition: 0.4s border-radius ease, 0.4s background-color ease ;
+}
+button:hover{
+    box-shadow: 0px 1px 1px 1px  black inset;
+    border-radius: 20px;
+    background-color: #33b952;
+}
+/* Asegurar que el filtro sea un bloque vertical */
+aside {
+    width: 20%;
+    padding: 10px;
+    border-right: 1px solid #ddd;
+}
+
+/* Hacer que los elementos de filtro se muestren en una lista vertical */
+aside label {
+    display: block;  /* Esto coloca cada filtro en una nueva línea */
+    margin-bottom: 10px;  /* Espaciado entre los filtros */
+    cursor: pointer;
+}
+#producto-detalle{
+    outline: 2px solid white;
+    outline-style:double;
+    outline-offset: 30px;
+    transition: 0.2s outline ease-in, 0.2s outline-offset ease-in-out;
+    border-radius: 20px;
+    
+}
+#producto-detalle:hover{
+    outline: 2px solid black;
+    outline-offset: 5px;
+    
+}
+
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    width: 50%;
+}
+.close {
+    color: red;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+
+/* Estilos del footer */
+footer {
+    background-color: #f8f8f8;
+    color: #333;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Sección superior */
+.footer-top {
+    background-color: #020202;
+    color: white;
+    padding: 20px;
+}
+
+.footer-top h2 {
+    font-size: 22px;
+}
+
+.highlight {
+    font-weight: bold;
+}
+
+.register-btn {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+.register-btn:hover{
+    border:2px solid aliceblue ;
+   
+}
+
+.register-btn:hover {
+    background-color: #333;
+}
+
+/* Sección media */
+.footer-middle {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.footer-column {
+    flex: 1;
+    text-align: left;
+    padding: 10px;
+}
+
+.footer-column h3 {
+    font-size: 16px;
+    color: black;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 8px;
+}
+
+.footer-column ul li a {
+    text-decoration: none;
+    color: #020202;
+}
+
+.footer-column ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Sección inferior */
+.footer-bottom {
+    display:flex ;
+    justify-content: space-evenly;
+    padding: 20px;
+    border-top: 1px solid #ddd;
+}
+.footer-bottom > p {
+    color: #000000;
+    font-size: 1.2rem;
+}
+
+
+.payment-methods img {
+    height: 30px;
+    
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+li > a > b{
+    background-color: #000000;
+    color: aliceblue;
+    padding: 0.4rem;
+    border-radius: 5px;
+}
+
+
+/*importados de home*/
