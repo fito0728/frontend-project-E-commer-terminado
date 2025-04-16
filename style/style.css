@@ -2,9 +2,11 @@
 
 /* Estilos generales */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+    font-family:sans-serif;
+    box-sizing: border-box;
+    margin: auto;
+    max-width: 100dvw;
+    font-size:clamp(0.8rem,1vw,1.4rem);
 }
 .tituloMain{
     border-bottom: 2px groove rgb(0, 0, 0);
@@ -14,17 +16,17 @@ body {
 .tituloMain > h2 {
     text-align: center;
     color: #000000;
-    filter: drop-shadow(2px 2px 2px rgb(95, 95, 95));
+    filter: drop-shadow(2px 2px 2px rgb(233, 233, 233));
     font-size: 2rem;
 }
 
 /* Barra de navegación */
 header {
-    background-color: #0e0d0d;
-    color: white;
+    background-color: #000000;
+    color: rgb(255, 245, 245);
     top: 0px;
     position: sticky;
-    padding: 1.5rem 0;
+    padding: 0.1% 0;
     text-align: center;
     z-index: 2;
 }
@@ -34,7 +36,7 @@ nav ul {
 }
 nav ul li {
     display: inline;
-    margin: 0 15px;
+    margin: 0 3%;
 }
 nav ul li a {
     color: white;
@@ -54,13 +56,14 @@ main {
 
 
 aside {
-    width: 20%;
-    padding: 10px;
-    border-right: 1px solid #ddd;
+    width: 10%;
+    padding: 5px;
+    border-right: 1px solid #dddddd00;
 }
 .filtro{
     display: flex;
     flex-direction: column;
+    padding: 10 px;
 }
 .productos {
     width: 80%;
@@ -98,7 +101,9 @@ button:hover{
 aside {
     width: 20%;
     padding: 10px;
-    border-right: 1px solid #ddd;
+    border-right: 0px solid #dddddd50;
+    
+
 }
 
 /* Hacer que los elementos de filtro se muestren en una lista vertical */

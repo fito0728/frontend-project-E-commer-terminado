@@ -157,7 +157,7 @@ body{
     margin: auto;
     width: 95dvw;
     box-sizing: border-box;
-    background-image: url(/home/imagenes/image.jpg);
+    background-image: url(imagenes/image.jpg);
     background-size: cover;
     min-height:60dvh;
     text-align:left;

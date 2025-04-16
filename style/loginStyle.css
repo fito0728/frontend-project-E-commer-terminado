@@ -2,7 +2,7 @@ body{
     display: flex;
     flex-direction: column;
     align-content: center;
-    background-image:radial-gradient(rgba(3, 2, 2, 0.575),rgba(0, 0, 0, 0.657)),url(/img/fondo.jpg);
+    background-image:radial-gradient(rgba(82, 82, 82, 0),rgba(0, 0, 0, 0)),url(img/fondo.jpg);
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
@@ -12,22 +12,22 @@ body{
 }
 /*contenedor del formulario*/
 .login{
-    background-color: rgba(26, 23, 23, 0.826);
+    background-color: rgba(0, 0, 0, 0.438);
     margin: auto;
-    margin-top: 20%;
+    margin-top: 7%;
     width: 50dvw;
     padding: 1.5rem;
     padding-bottom: 100px;
-    border-radius: 20px;
-    box-shadow: 2px 2px 1px black;
-    filter: drop-shadow(3px 3px 3px rgb(70, 55, 55));
+    border-radius: 20px;    
+    box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.425);
+    filter: drop-shadow(3px 3px 3px rgba(185, 185, 185, 0.479));
 }
 .login  h2{
     text-align: center;
-    color: rgb(255, 234, 234);
-    text-shadow: 1px 1px 1px rgb(254, 77, 77);
-    border-left:2px solid rgb(191, 191, 191);
-    border-right:2px solid rgb(191, 191, 191) ;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.411);
+    border-left:2px solid rgba(255, 248, 248, 0);
+    border-right:2px solid rgba(191, 191, 191, 0) ;
 }
 /*formulario*/
 .formulario{
@@ -48,21 +48,21 @@ label{
     padding: 1rem;
     border-radius: 5px;
     border: none;
-    color: white;
+    color: white;   
     background-color: rgb(0, 0, 0);
 }
 .item:focus{
-    outline: none;
+    outline: none;  
     border-left:2px solid rgb(191, 191, 191);
     border-right:2px solid rgb(191, 191, 191) ;
     box-shadow:1px 1px 2px rgb(156, 156, 156) inset;
 }
 .submit{
-    width: 2rem;
+    width: 6rem;
     max-width: 400px;
     margin: auto;
     margin-top: 2rem;
-    background-color: #ffeded;
+    background-color: #f5f5f5;
     color: black;
     font-size: 1.2rem
 }
